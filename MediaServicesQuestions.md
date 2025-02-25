@@ -49,14 +49,6 @@ Shorter GOPs improve seekability; longer GOPs save bits.
 
 ---
 
-## **Intermediate Questions**  
-
-### 6. **Compare H.264, H.265, and AV1 in compression efficiency and use cases.**  
-**Answer:**  
-- **H.264:** Standard for 1080p streaming (broad device support).  
-- **H.265:** ~50% better efficiency (ideal for 4K), but requires licensing.  
-- **AV1:** Royalty-free, ~30% more efficient than HEVC. Best for platforms prioritizing open standards (YouTube, Netflix).  
-
 ---
 
 ### 7. **What factors determine codec adoption (e.g., H.265 vs. AV1)?**  
@@ -92,11 +84,7 @@ HDR (High Dynamic Range) requires:
 - **Higher bitrates** (~20Mbps for 4K HDR vs. 6Mbps for 1080p SDR).  
 - **Tone mapping** for SDR fallback.
 
-# Technical Interview Prep (Questions 11–20)  
-
 ---
-
-## **Basic Questions**  
 
 ### 11. **What is adaptive bitrate streaming (ABR)?**  
 **Answer:**  
@@ -133,8 +121,6 @@ A profile defines codec features and compatibility:
 
 ---
 
-## **Intermediate Questions**  
-
 ### 16. **How do you optimize encoding for low-bandwidth networks?**  
 **Answer:**  
 - Use efficient codecs (AV1/H.265).  
@@ -169,10 +155,6 @@ A JIT packager generates video segments on-demand during playback instead of pre
 
 ---
 
----
-
-## **Basic Questions**  
-
 ### 20. **What is the purpose of a video test lab?**  
 **Answer:**  
 A test lab validates playback across devices (Roku, Apple TV, mobile) and simulates network conditions (e.g., 3G throttling). Ensures compatibility and performance before deployment.  
@@ -204,8 +186,6 @@ A container (MP4, MKV, TS) stores video, audio, and metadata. MP4 is standard fo
 
 ---
 
-## **Intermediate Questions**  
-
 ### 25. **How does multi-pass encoding improve quality?**  
 **Answer:**  
 Multi-pass encoding analyzes the entire video in the first pass to optimize bitrate allocation. Reduces quality fluctuations (e.g., action scenes get more bits).  
@@ -229,8 +209,7 @@ Use tools like Netflix’s VMAF to score perceived quality (0–100). Adjust CRF
 Deploy backup encoders (e.g., AWS Elemental + FFmpeg) and redundant CDN paths. Use RTMP failover and monitor with heartbeat checks to ensure 99.9% uptime.  
 
 ---
-
-## **Basic Questions**  
+ 
 
 ### 29. **What causes buffering during video playback?**  
 **Answer:**  
@@ -255,7 +234,6 @@ Higher frame rates (e.g., 60fps) improve smoothness for sports/action but increa
 **Answer:**  
 A thumbnail is a preview image extracted from a video. 
 
-# Technical Interview Prep (Questions 35–40)  
 
 ---
 
@@ -307,3 +285,14 @@ Tools: Datadog, Conviva, Mux Data.
 - **Redundant encoders** (AWS Elemental + on-prem FFmpeg).  
 - **Geo-replicated storage** (S3 Cross-Region Replication).  
 - **Automated health checks** (e.g., AWS CloudWatch).
+
+### 39. **What is the difference between 1080i and 1080p?**  
+**Answer:**  
+- **1080i (Interlaced):**  
+  Displays video in two alternating fields (odd/even lines), reducing bandwidth but causing motion artifacts (e.g., "combing"). Used in broadcast TV.  
+- **1080p (Progressive):**  
+  Displays all lines sequentially, delivering smoother motion and sharper details. Standard for streaming (Netflix, YouTube) and Blu-ray.  
+
+**Key Difference:**  
+- **Interlaced (i):** Better for bandwidth-limited live broadcasts.  
+- **Progressive (p):** Superior for high-motion content and modern streaming.
