@@ -1,7 +1,3 @@
-# Kubernetes Interview Questions and Answers (1-10)
-
----
-
 ### **1. What is `kubectl`, and what is it used for? What is the command `kubectl` and its syntax?**
 **Answer:**  
 `kubectl` is the command-line tool for interacting with Kubernetes clusters. It’s used to deploy, inspect, and manage applications.  
