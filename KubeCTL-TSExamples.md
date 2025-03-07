@@ -1,7 +1,3 @@
-# Kubernetes Troubleshooting Interview Questions and Answers (1-10)
-
----
-
 ### **1. How do you check the status of all nodes in the cluster?**
 **Answer:**  
 Use the following command:  
@@ -86,7 +82,6 @@ Look for events like no available PersistentVolume (PV) or storage class issues.
 
 ---
 
-# **Kubectl Command Categories**
 
 ### **Basic Commands (Beginner):**
 - `create`: Create a resource from a file or from stdin.
