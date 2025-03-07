@@ -1,4 +1,4 @@
-# Kubernetes Interview Questions and Answers (1)
+# Kubernetes Interview Questions and Answers (1-10)
 
 ---
 
@@ -6,9 +6,7 @@
 **Answer:**  
 `kubectl` is the command-line tool for interacting with Kubernetes clusters. It’s used to deploy, inspect, and manage applications.  
 **Syntax:**  
-```bash
-kubectl [command] [resource] [flags]
-
+`kubectl [command] [resource] [flags]`
 
 ---
 
