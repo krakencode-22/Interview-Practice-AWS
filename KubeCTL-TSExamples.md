@@ -121,6 +121,7 @@ Look for events like no available PersistentVolume (PV) or storage class issues.
 - `debug`: Create debugging sessions for troubleshooting workloads and nodes.
 - `events`: List events.
 
+
 ### **Advanced Commands:**
 - `diff`: Diff the live version against a would-be applied version.
 - `apply`: Apply a configuration to a resource by file name or stdin.
